@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    --primary-color:rgb(14, 110, 227);
+    --secondary-color: rgb(0, 255, 238);
+    --FirstImageBorder:rgb(34, 13, 152);
+    --SecondImageBorder: rgb(73, 11, 173);
+}
+
+.fundo {
+    background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+.authorName {
+    font-family: 'Roboto Mono', monospace;    
+}
+
+img {
+    border: solid 5px var(--FirstImageBorder);
+    border-radius: 50%;
+    width: 118px;
+    padding: 2px;
+    margin: 9px auto;
+}
+  
+img:hover {
+    padding: 0px;
+    width: 125px;
+    border: solid 5px var(--SecondImageBorder);
+    margin-bottom: 2px;
+}
+
+.calculadora {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 1);
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 30px white;
+}
+
+@media (max-width: 374px) {
+    .calculadora {
+        top: 70%;
+    }
+}
+
+
+.btn {
+    margin: 1px; 
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31,31,31);
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(127, 11, 173);
+}
+
+#resultado {
+    background-color:#fff;
+    width: 202px;
+    height: 30px;
+    margin: 8px 3px;
+    font-size: 25px;    
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+
+
+
